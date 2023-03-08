@@ -7,7 +7,7 @@
 
      https://bitcore.io/api/lib/transaction
      https://bitcoin.org/en/developer-reference#rpcs
-     https://testnet.blockexplorer.com/api-ref
+     https://mainnet.blockexplorer.com/api-ref
 */
 
 // Biblioteca do sdk bitcore
@@ -20,8 +20,8 @@ class BlockExplorerLib {
 
     // Select network
     constructor(network_type) {
-        if(network_type == 'testnet') {
-            this.url_api = 'https://testnet.blockexplorer.com/api';
+        if(network_type == 'mainnet') {
+            this.url_api = 'https://mainnet.blockexplorer.com/api';
         }
         else {
             this.url_api = 'https://blockexplorer.com/api';
